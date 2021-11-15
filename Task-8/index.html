@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CSS Editor </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!------ Bootstrap Css----->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!----css link----->
+
+<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+<div class="code-area">
+  <textarea id="htmlCode" placeholder="HTML Code"
+            oninput="showPreview()">
+<!DOCTYPE html>
+<html>
+       <head> </head>
+<body>
+  <!--Write Code Here---> 
+</body>
+</html>
+      </textarea>
+      <!-- css coder editor part----->
+  <textarea id="cssCode" placeholder="" 
+            oninput="showPreview()">/*---CSS Code Write Here---*/</textarea>
+
+            <!---Button html css code copy-------> 
+          
+         <button type="button" style="width: 50%; margin-top: 20px;" class="btn btn-primary" onclick="htmlcodecopy()">Html Code Copy</button>
+
+         <button type="button"style="width: 50%; margin-top: 10px;" class="btn btn-warning" onclick="csscodecopy()">CSS Code Copy</button>
+     
+      <!---button try code run---->
+<div class="btn-group">
+  <button id="run-btn">Try this out</button>
+  </div>  
+</div>
+
+<!----Preview html code ---------->
+<div class="preview-area">
+  <iframe id="preview-window"></iframe>
+</div>
+<script type="text/javascript" src="js/JavaScript.js"></script>
+</div>
+<script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
